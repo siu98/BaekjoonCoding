@@ -9,7 +9,7 @@ for _ in range(N):
 
 cnt = 1
 
-for i in reversed(range(N)):
+for i in range(N-2, -1, -1):
     if stack[i] > stack[-1]:
         cnt += 1
         stack[-1] = stack[i] 
